@@ -1,0 +1,494 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+:root{
+    --bg-color:#2a2a2a;
+    --second-bg-color:#202020;
+    --text-color:#fff;
+    --second-color:#ccc;
+    --main-color:#ff4d05;
+    --big-font:5rem;
+    --h2-font:3rem;
+    --p-font: 1.1rem;
+    
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+/* editing the header */
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:transparent;
+    padding: 22px 15%;
+    border-bottom: 1px solid transparent;
+    transition: all .45s ease;
+}
+/* editing the logo class */
+.logo{
+    color: var(--text-color);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+/* editing the span bar */
+span{
+    color: var(--main-color);
+}
+/* editing the nav */
+.navlist{
+    display: flex;
+
+}
+/* editing the elements inside the nav*/
+.navlist a{
+    color: var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.navlist a.active{
+    color: var(--main-color);
+}
+/* editing the tab of the menu, so it wont appear when it's in normal view*/
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 10001;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+/* editing the section parts */
+section{
+    padding: 30px 15%;
+}
+.user{
+    padding: 160px 15% 120px;
+    display: flex;
+}
+/* editing the itnro class */
+.intro{
+    position:relative;
+    height: 100vh;
+    width: 100%;
+    background-image:url(wee.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+/* editing the slide class */
+.slide{
+    margin-bottom: 20px; 
+}
+/* editing the one class */
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    height: 32px;
+    padding: 0 15px;
+    line-height:  32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+
+}
+/* editing the two class */
+.two{
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight: 500;
+
+}
+/* editing the intro-textclass element h1*/
+.intro-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    line-height: 1.1;
+    margin: 0 0 8px;
+}
+/* editing the intro-textclass element h3*/
+.intro-text h3{
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+/* editing the intro-textclass element p*/
+.intro-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+/* editing the header with some js*/
+header.sticky{
+    background: var(--bg-color);
+    border-bottom: 1px solid #ffffff1a;
+    padding: 12px 15%;
+}
+/* editing the aboutme section*/
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+/* editing the aboutme img element*/
+.about-img img{
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+
+}
+/* editing the aboutme-textclass element h2*/
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+
+}
+/* editing the aboutme-textclass element h4*/
+.about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+/* editing the aboutme-textclass element p*/
+.about-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 4em;
+}
+/* editing the aboutme-textclass element li*/
+.about-text ul li{
+    color: var(--text-color);
+    line-height: 1;
+    font-size: 20px;
+}
+.algon{
+    background: var(--bg-color);
+
+}
+.algon-text{
+    text-align: center;
+}
+.algon-text p{
+    color: var(--second-color);
+    font-size: 24px;
+    margin-bottom: 15px; 
+}
+.algon .button-two{
+    background-color:var(--main-color);
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-weight: 700;
+    border-radius: 30px;
+    transition: .4s;
+}
+.algon .button-two:hover{
+    background-color: transparent;
+    border: 1px solid var(--main-color);
+    cursor: pointer;
+}
+
+.card {
+
+    background:navajowhite;
+    margin: 16px auto;
+    padding: 8px;
+    
+    
+}
+.card h1{
+    font-style: italic;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    margin: 20px 0px 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.card p{
+    font-size: 15px;
+    color: #101010;
+}
+.card ul{
+    font-size: 25px;
+}
+.card ul li{
+    font-size: 20px;
+}
+footer{
+    position: relative;
+    width: 100% ;
+    height: 400px;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer p:nth-child(1){
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+.social{
+display: flex;
+}
+.social a{
+width: 45px;
+height: 45px;
+display: flex;
+align-items: center;
+justify-content: center;
+background: var(--main-color);
+border-radius: 50%;
+margin: 22px 10px;
+color: white;
+text-decoration: none;
+font-size: 20px;
+}
+.social a:hover{
+transform: scale(1.3);
+transition: .3s;
+
+}
+.end{
+text-align: right;
+color: var(--main-color);
+bottom: 35px;
+font-size: 14px;
+}
+
+
+
+@media (max-width:1480px){
+    header{
+        padding: 12px 2.5%;
+        transition: .1s;
+    }
+    header.sticky{
+        padding: 10px 2.5%;
+        transition: .1s;
+    }
+    section{
+        padding: 110px 3% 60px;
+    }
+}
+@media (max-width:1100px){
+    :root{
+        --big-font:4rem;
+        --h2-font:2.5rem;
+        --p-font:1rem;
+        transition: .1s;
+
+    }
+    .intro-text h3{
+        font-size: 2.5rem;
+
+
+    }
+    .into{
+        height: 87vh;
+    }
+}
+
+
+@media (max-width:920px){
+    .about{
+        grid-template-columns: 1fr;
+    }
+    .about-img{
+        text-align: center;
+        order: 2;
+    }
+    .about-img img{
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+
+    }
+}
+
+@media (max-width:840px){
+    #menu-icon{
+        display:block
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        right: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background:var(--bg-color);
+        text-align: left;
+ 
+    }
+    .navlist a{
+        display: block;
+        margin: 17px;
+        font-size: 20px;
+        transition: all .45s ease;
+        color: var(--text-color);
+    }
+    .navlist a:hover{
+        color: var(--main-color);
+    }
+    .navlist a.active{
+        color: var(--text-color);
+    }
+    .navlist.open{
+        top: 100%;
+        }
+}
+
+ .search-container {
+    top: 20px;
+    margin-left: 10px;
+    padding: 5px;
+    float: left;
+    padding-left: 5px;
+    /* right: 20px; */
+  }
+  
+  .search-container input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .search-container button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+#sort-btn{
+    width: 200px;
+    top: 20px;
+    margin-left: 10px;
+    padding: 5px;
+    float: left;
+    padding-left: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+}
+
+
+.courses {
+    border: 1px solid white;
+    
+}
+.courses h1{
+    font-size: var(--h2-font);
+    font-weight: 700;
+    color: var(--main-color);
+}
+.courses h1:hover{
+    color: var(--text-color)
+}
+
+.courses h2{
+    font-size: 24px;
+    /* color: black; */
+}
+.courses p{
+    color:black;
+    /* color:black; */
+}
+
+.Projects p{
+    color:#101010;
+    font-size: large;
+}
+
+.hidden{
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+  
+  .grid-item {
+ background-color: navajowhite; 
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .grid-item:hover{
+    transform:translateY(-8px);
+    cursor: pointer;
+  }
+  .courseImg {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+.inp{
+    padding-right:30px;
+
+}
+ .inp input{
+    border:none;
+    width: 200px;
+    padding: 15px;
+    padding-left: 5px;
+    float: left;
+
+ }
+
+ .inp select{
+    border:none;
+    width: 20px;
+    padding: 15px;
+    padding-left: 5px;
+    float: left;
+
+ }
